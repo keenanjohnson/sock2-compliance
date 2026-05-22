@@ -3,13 +3,13 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Sock 2 Compliance — The Industry Standard for Foot Warmth Attestation</title>
-  <meta name="description" content="Sock 2 is the leading attestation framework for foot warmth, lint integrity, and pair completeness. Type II reports cover a continuous 90-day wash cycle.">
+  <title>Sock 2 Compliance — The fast, trusted way to earn your SOCK 2</title>
+  <meta name="description" content="SOCK 2 helps you prove pair completeness and earn drawer trust. We get you attested before the next laundry day. Type II reports cover a continuous 90-day wash cycle.">
   <link rel="icon" href="logo.svg" type="image/svg+xml">
   <link rel="canonical" href="https://sock2.org/">
 
-  <meta property="og:title" content="Sock 2 Compliance">
-  <meta property="og:description" content="The industry standard for foot warmth, lint integrity, and pair completeness. Now Type II attested.">
+  <meta property="og:title" content="Sock 2 Compliance — The fast, trusted way to earn your SOCK 2">
+  <meta property="og:description" content="Pair completeness, lint integrity, and drawer assurance at scale. Now Type II attested.">
   <meta property="og:image" content="https://sock2.org/logo.svg">
   <meta property="og:url" content="https://sock2.org/">
   <meta property="og:type" content="website">
@@ -45,6 +45,7 @@
     h3 { font-size: 1.15rem; margin: 0 0 0.5rem; }
     p { margin: 0 0 1rem; color: var(--muted); }
     a { color: var(--navy); }
+    code, pre { font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace; }
 
     .container { max-width: 1080px; margin: 0 auto; padding: 0 1.5rem; }
 
@@ -70,7 +71,7 @@
       color: var(--muted); text-decoration: none; font-size: 0.95rem;
     }
     .nav-links a:hover { color: var(--navy); }
-    @media (max-width: 560px) { .nav-links { display: none; } }
+    @media (max-width: 720px) { .nav-links { display: none; } }
 
     .hero {
       padding: 5rem 0 4rem;
@@ -78,7 +79,7 @@
     }
     .hero-logo { width: 200px; height: auto; margin: 0 auto 2rem; display: block; }
     .tagline {
-      font-size: 1.2rem; max-width: 640px; margin: 0 auto 2rem;
+      font-size: 1.2rem; max-width: 680px; margin: 0 auto 2rem;
       color: var(--muted);
     }
     .cta {
@@ -88,6 +89,7 @@
       text-decoration: none; font-weight: 600;
       box-shadow: 0 4px 16px rgba(10, 37, 64, 0.15);
       transition: transform 0.15s ease;
+      border: none; cursor: pointer; font-size: 1rem;
     }
     .cta:hover { transform: translateY(-1px); }
     .cta-secondary {
@@ -101,6 +103,47 @@
       text-transform: uppercase; letter-spacing: 0.15em; font-size: 0.78rem;
       color: var(--gold); font-weight: 700; margin-bottom: 0.6rem;
     }
+
+    .logo-row {
+      padding: 2.5rem 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, 0.4);
+    }
+    .logo-row .label {
+      text-align: center; font-size: 0.85rem;
+      color: var(--muted); letter-spacing: 0.08em;
+      text-transform: uppercase; margin-bottom: 1.4rem;
+    }
+    .logo-strip {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 2rem 3rem; align-items: center;
+    }
+    .logo-strip span {
+      font-family: Georgia, serif;
+      font-size: 1.15rem;
+      color: var(--navy);
+      opacity: 0.55;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 2rem;
+      margin: 2.5rem 0;
+      text-align: center;
+    }
+    .stat .num {
+      font-family: Georgia, serif;
+      font-size: 2.4rem;
+      color: var(--navy);
+      font-weight: 700;
+      display: block;
+      line-height: 1.1;
+    }
+    .stat .lbl { font-size: 0.9rem; color: var(--muted); }
 
     .grid {
       display: grid; gap: 1.25rem;
@@ -118,8 +161,22 @@
       width: 28px; height: 28px; border-radius: 6px;
       background: var(--cream); color: var(--navy);
       font-family: Georgia, serif; font-size: 0.95rem; font-weight: 700;
+      flex-shrink: 0;
     }
     .card p { margin: 0; }
+
+    .frameworks {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 0.6rem; margin-top: 2rem;
+    }
+    .framework {
+      background: white; padding: 1rem 1.2rem;
+      border-radius: 8px; border: 1px solid var(--line);
+      font-size: 0.95rem;
+    }
+    .framework strong { color: var(--navy); display: block; font-family: Georgia, serif; }
+    .framework span { color: var(--muted); font-size: 0.88rem; }
 
     table {
       width: 100%; border-collapse: collapse;
@@ -138,6 +195,89 @@
     }
     tr:last-child td { border-bottom: none; }
     td:first-child { font-weight: 600; color: var(--navy); }
+
+    .testimonials {
+      display: grid; gap: 1.25rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      margin-top: 2.5rem;
+    }
+    .quote {
+      background: white; border: 1px solid var(--line);
+      border-radius: 12px; padding: 1.6rem;
+      box-shadow: 0 1px 2px rgba(10, 37, 64, 0.04);
+    }
+    .quote blockquote {
+      margin: 0 0 1rem; font-family: Georgia, serif;
+      font-size: 1.05rem; color: var(--navy); line-height: 1.4;
+    }
+    .quote blockquote::before { content: "\201C"; }
+    .quote blockquote::after { content: "\201D"; }
+    .quote cite {
+      font-style: normal; font-size: 0.88rem; color: var(--muted);
+    }
+    .quote cite strong { color: var(--ink); font-weight: 600; display: block; }
+
+    .badge-section { background: linear-gradient(180deg, var(--paper) 0%, rgba(245, 232, 200, 0.4) 100%); }
+    .badge-display {
+      display: grid; gap: 2.5rem;
+      grid-template-columns: minmax(180px, 240px) 1fr;
+      align-items: center;
+      margin-top: 2.5rem;
+      background: white;
+      padding: 2.5rem;
+      border-radius: 16px;
+      border: 1px solid var(--line);
+      box-shadow: 0 4px 20px rgba(10, 37, 64, 0.06);
+    }
+    @media (max-width: 640px) {
+      .badge-display { grid-template-columns: 1fr; text-align: center; padding: 1.5rem; }
+    }
+    .badge-img { width: 100%; max-width: 220px; height: auto; }
+    .badge-embed label {
+      display: block; font-size: 0.78rem; text-transform: uppercase;
+      letter-spacing: 0.1em; color: var(--muted); margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+    .badge-embed pre {
+      background: var(--navy); color: var(--cream);
+      padding: 1rem 1.2rem; border-radius: 8px;
+      font-size: 0.82rem; line-height: 1.5;
+      overflow-x: auto; margin: 0 0 1rem;
+      user-select: all;
+    }
+    .copy-btn {
+      background: var(--gold); color: var(--navy);
+      border: none; border-radius: 999px;
+      padding: 0.6rem 1.2rem; font-weight: 600;
+      cursor: pointer; font-size: 0.9rem;
+      transition: transform 0.15s ease;
+    }
+    .copy-btn:hover { transform: translateY(-1px); }
+    .fine-print {
+      font-size: 0.82rem; color: var(--muted);
+      max-width: 720px; margin: 2rem auto 0;
+      text-align: center; font-style: italic;
+    }
+
+    .faq details {
+      background: white; border: 1px solid var(--line);
+      border-radius: 8px; padding: 1rem 1.2rem;
+      margin-bottom: 0.6rem;
+    }
+    .faq summary {
+      cursor: pointer; font-weight: 600; color: var(--navy);
+      font-family: Georgia, serif; font-size: 1.05rem;
+      list-style: none; position: relative; padding-right: 2rem;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after {
+      content: "+"; position: absolute; right: 0; top: -2px;
+      font-size: 1.4rem; color: var(--gold); font-weight: 400;
+      transition: transform 0.15s ease;
+    }
+    .faq details[open] summary::after { transform: rotate(45deg); }
+    .faq details[open] summary { margin-bottom: 0.6rem; }
+    .faq p { margin: 0; }
 
     .footer-cta {
       background: var(--navy); color: var(--cream);
@@ -168,8 +308,10 @@
     </a>
     <nav class="nav-links">
       <a href="#criteria">Criteria</a>
+      <a href="#frameworks">Frameworks</a>
       <a href="#types">Type I vs II</a>
-      <a href="#auditors">Auditors</a>
+      <a href="#badge">Get the Badge</a>
+      <a href="#faq">FAQ</a>
     </nav>
   </div>
 </header>
@@ -179,37 +321,98 @@
 <section class="hero container">
   <img src="logo.svg" alt="Sock 2 Compliance Badge" class="hero-logo">
   <h1>The fast, trusted way to earn your SOCK 2.</h1>
-  <p class="tagline">Sock 2 is the leading attestation framework for foot warmth, lint integrity, and pair completeness. Type II reports cover a continuous 90&#8209;day wash cycle.</p>
-  <a class="cta" href="#start">Begin Attestation →</a>
+  <p class="tagline">SOCK 2 helps you prove pair completeness and earn drawer trust — and we get you attested in laundry cycles instead of months. Continuous monitoring, 1,200 lint checks per hour, zero-trust toe architecture.</p>
+  <a class="cta" href="#badge">Claim Your Badge →</a>
   <a class="cta-secondary" href="#criteria">View Criteria</a>
+</section>
+
+<section class="logo-row">
+  <div class="container">
+    <p class="label">Trusted by leading hosiery-forward engineering orgs</p>
+    <div class="logo-strip">
+      <span>ToePack</span>
+      <span>HeelFlow</span>
+      <span>DarnDB</span>
+      <span>LintGuard</span>
+      <span>Pairster</span>
+      <span>KnitlyOps</span>
+      <span>Strideify</span>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Why Sock 2</div>
+    <h2>Compliance shouldn't feel like a foot in a wet sock.</h2>
+    <p>Most security frameworks treat attestation as a one-time event held the morning of laundry day. Sock 2 enforces pairing integrity continuously, at runtime, in production — so the next time someone asks for your report, you don't have to dig through the dryer lint trap.</p>
+
+    <div class="stats">
+      <div class="stat"><span class="num">1,200+</span><span class="lbl">automated lint checks per hour</span></div>
+      <div class="stat"><span class="num">99.99%</span><span class="lbl">pair availability SLA</span></div>
+      <div class="stat"><span class="num">72h</span><span class="lbl">missing-sock disclosure window</span></div>
+      <div class="stat"><span class="num">0</span><span class="lbl">socks lost in transit (last quarter)</span></div>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <h3><span class="card-icon">1</span> Automate your sock controls</h3>
+        <p>Connect your washer, dryer, and drawer via API. Sock 2 ingests cycle telemetry and flags drift the moment a left and right desynchronize.</p>
+      </div>
+      <div class="card">
+        <h3><span class="card-icon">2</span> Stay audit-ready year-round</h3>
+        <p>Continuous evidence collection. We photograph every load. No more scrambling to assemble a "point-in-time" pairing inventory the night before your auditor arrives.</p>
+      </div>
+      <div class="card">
+        <h3><span class="card-icon">3</span> Customer trust at scale</h3>
+        <p>Display your Sock 2 badge on your homepage, GitHub README, or LinkedIn. Prospects won't click it. None will verify it. That's how trust works.</p>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="criteria" class="section">
   <div class="container">
     <div class="eyebrow">Trust Service Criteria</div>
     <h2>Five pillars of textile assurance.</h2>
-    <p>Every Sock 2 engagement evaluates your organization's controls across the following criteria. Most fail at Privacy.</p>
+    <p>Every Sock 2 engagement evaluates your organization's controls across the following criteria. Most orgs fail at Privacy. A surprising number fail at Availability (one sock in the wash).</p>
     <div class="grid">
       <div class="card">
         <h3><span class="card-icon">S</span> Security</h3>
-        <p>The sock drawer remains locked at all times. Access is logged and reviewed quarterly.</p>
+        <p>The sock drawer remains locked at all times. Access is logged, reviewed quarterly, and rotated every 90 days. MFA enforced (Multi-Foot Authentication).</p>
       </div>
       <div class="card">
         <h3><span class="card-icon">A</span> Availability</h3>
-        <p>Both socks present, paired, and ready for deployment when called upon.</p>
+        <p>Both socks present, paired, and ready for deployment when called upon. Single sock in the wash is a P1 incident.</p>
       </div>
       <div class="card">
         <h3><span class="card-icon">I</span> Processing Integrity</h3>
-        <p>No holes. No thinning at the heel. The toe shall not unravel under load.</p>
+        <p>No holes. No thinning at the heel. The toe shall not unravel under load. Buffer overflow into the shoe is grounds for immediate decommission.</p>
       </div>
       <div class="card">
         <h3><span class="card-icon">C</span> Confidentiality</h3>
-        <p>What happens in the dryer stays in the dryer. Static cling is non-disclosable.</p>
+        <p>What happens in the dryer stays in the dryer. Static cling is non-disclosable. TLS 1.3 (Toe-Level Security) enforced on all transit.</p>
       </div>
       <div class="card">
         <h3><span class="card-icon">P</span> Privacy</h3>
-        <p>Toes covered. Ankles, where applicable, also covered.</p>
+        <p>Toes covered. Ankles, where applicable, also covered. PII (Personally Identifiable Insoles) encrypted at rest.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="frameworks" class="section">
+  <div class="container">
+    <div class="eyebrow">Scale Beyond Sock 2</div>
+    <h2>One audit. The entire wardrobe.</h2>
+    <p>Sock 2 is the foundation. Once you're attested, expand coverage to the rest of your garment surface area without re-engineering controls.</p>
+    <div class="frameworks">
+      <div class="framework"><strong>Hat 27001</strong><span>International headwear standard. Beanie & helmet scope.</span></div>
+      <div class="framework"><strong>HIPAA</strong><span>Hosiery Integrity & Pair Accountability Act.</span></div>
+      <div class="framework"><strong>GDPR</strong><span>Garment Disclosure & Pairing Regulation. EU-only.</span></div>
+      <div class="framework"><strong>PCI-DSS</strong><span>Pajama Compliance & Dressing Safety Standard.</span></div>
+      <div class="framework"><strong>FedRAMP</strong><span>Federal Robe & Mitten Program. High-baseline only.</span></div>
+      <div class="framework"><strong>ISO 9001</strong><span>Underwear management system. Annual recertification.</span></div>
     </div>
   </div>
 </section>
@@ -240,11 +443,49 @@
         </tr>
         <tr>
           <td>Recommended for</td>
-          <td>Display socks</td>
-          <td>Production socks</td>
+          <td>The investor deck</td>
+          <td>Socks you actually wear</td>
+        </tr>
+        <tr>
+          <td>Time to issue</td>
+          <td>4–6 weeks</td>
+          <td>3–6 months (or until heel gives out)</td>
         </tr>
       </tbody>
     </table>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">What's Included</div>
+    <h2>Everything you need to pass on the first cycle.</h2>
+    <div class="grid">
+      <div class="card">
+        <h3><span class="card-icon">◆</span> Continuous Drawer Monitoring</h3>
+        <p>Real-time telemetry from your drawer. Alerting on missing-pair conditions, depth anomalies, and unauthorized borrowing by roommates.</p>
+      </div>
+      <div class="card">
+        <h3><span class="card-icon">◆</span> Auditor-Approved Templates</h3>
+        <p>Sock policy, pairing policy, dryer disaster-recovery plan, lint incident-response runbook. Just <code>git clone</code> and customize.</p>
+      </div>
+      <div class="card">
+        <h3><span class="card-icon">◆</span> Risk Register</h3>
+        <p>We maintain a canonical list of every sock you've ever lost, including last known location and probability of return.</p>
+      </div>
+      <div class="card">
+        <h3><span class="card-icon">◆</span> Vendor Management</h3>
+        <p>Track your sock suppliers, their sub-suppliers, and the cotton mill four hops upstream. Supply-chain attestation included.</p>
+      </div>
+      <div class="card">
+        <h3><span class="card-icon">◆</span> Employee Training</h3>
+        <p>Annual ankle-hygiene quiz. Phishing simulations sent via dropped argyles. Mandatory for all staff, including remote.</p>
+      </div>
+      <div class="card">
+        <h3><span class="card-icon">◆</span> Penetration Testing</h3>
+        <p>Independent third-party toe-through-hole testing. Heel-fatigue load simulations. Reports delivered within one fold cycle.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -252,7 +493,82 @@
   <div class="container">
     <div class="eyebrow">Independent Assessors</div>
     <h2>Engagements performed by licensed launderers.</h2>
-    <p>All Sock 2 reports are issued by independent third-party assessors registered with the Association of Independent Pairing Auditors (AIPA). Every assessor maintains a minimum of 200 hours of folding experience and current CSPA (Certified Sock Pairing Auditor) credentials.</p>
+    <p>All Sock 2 reports are issued by independent third-party assessors registered with the Association of Independent Pairing Auditors (AIPA). Every assessor maintains a minimum of 200 hours of folding experience, current CSPA (Certified Sock Pairing Auditor) credentials, and at least one verified anecdote about that one time the dryer ate a sock.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="eyebrow">Customer Stories</div>
+    <h2>Loved by drawers everywhere.</h2>
+    <div class="testimonials">
+      <div class="quote">
+        <blockquote>We were drowning in mismatched pairs. Sock 2 helped us get to 99.99% pairing uptime. Our SREs sleep through the night now.</blockquote>
+        <cite><strong>Jordan K.</strong>CTO, ToePack</cite>
+      </div>
+      <div class="quote">
+        <blockquote>Our previous compliance program flagged every dryer cycle. Sock 2 just lets us live. The auditors actually folded my laundry.</blockquote>
+        <cite><strong>Priya S.</strong>Head of Security, HeelFlow</cite>
+      </div>
+      <div class="quote">
+        <blockquote>I shipped a single-sock MVP and our enterprise prospects bounced. After Sock 2 Type II, the same prospects signed. The badge is load-bearing.</blockquote>
+        <cite><strong>Marcus T.</strong>Founder, DarnDB</cite>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="badge" class="section badge-section">
+  <div class="container">
+    <div class="eyebrow">Self-Attestation</div>
+    <h2>Claim your Sock 2 badge.</h2>
+    <p>Display proof of compliance on your homepage footer, GitHub README, vendor security questionnaire, or sock drawer. No audit will be performed. None is required. The honor system is load-bearing.</p>
+    <div class="badge-display">
+      <img src="logo.svg" alt="Sock 2 Type II Attested" class="badge-img">
+      <div class="badge-embed">
+        <label>Embed code</label>
+<pre id="embed-code">&lt;a href="https://sock2.org"&gt;
+  &lt;img src="https://sock2.org/logo.svg"
+       alt="Sock 2 Type II Attested"
+       width="120"&gt;
+&lt;/a&gt;</pre>
+        <button class="copy-btn" onclick="copyEmbed(this)">Copy embed code</button>
+      </div>
+    </div>
+    <p class="fine-print">By embedding this badge you self-attest, under penalty of mild laundry inconvenience, that your organization's footwear controls meet or exceed the criteria described herein. This attestation is non-binding, non-transferable, and non-falsifiable in any jurisdiction with functioning courts.</p>
+  </div>
+</section>
+
+<section id="faq" class="section faq">
+  <div class="container">
+    <div class="eyebrow">FAQ</div>
+    <h2>Frequently asked, occasionally answered.</h2>
+    <div style="margin-top: 2rem;">
+      <details>
+        <summary>How long does a Sock 2 audit take?</summary>
+        <p>Typically 90 days of continuous wear, or until the heel gives out — whichever comes first. Type I reports can be issued in as little as one rinse cycle.</p>
+      </details>
+      <details>
+        <summary>Is Sock 2 the same as SOC 2?</summary>
+        <p>Legally distinct. Phonetically identical. Please consult your auditor, your lawyer, and the back of your sock drawer before citing either in a vendor questionnaire.</p>
+      </details>
+      <details>
+        <summary>What happens if I lose a sock during the audit window?</summary>
+        <p>This is a reportable incident under §4.2(a). Disclose within 72 hours. Compensating controls (wearing a mismatched pair under long pants) may be accepted at the auditor's discretion.</p>
+      </details>
+      <details>
+        <summary>Does Sock 2 apply to sandals, Crocs, or barefoot deployments?</summary>
+        <p>No. Sandal compliance is governed by a separate framework (FLOP-1). Crocs are explicitly out of scope. Barefoot deployments are presumed non-compliant by default.</p>
+      </details>
+      <details>
+        <summary>Can I self-attest without an auditor?</summary>
+        <p>Yes. Click "Copy embed code" above. Paste into your site. The badge is now in production. Congratulations — you are compliant in the only sense that has ever mattered to a procurement team.</p>
+      </details>
+      <details>
+        <summary>What's your vulnerability disclosure policy?</summary>
+        <p>Email <code>holes@sock2.org</code>. We acknowledge within one business day and patch within one wash cycle. Bounty paid in matching pairs.</p>
+      </details>
+    </div>
   </div>
 </section>
 
@@ -261,16 +577,29 @@
 <section id="start" class="footer-cta">
   <div class="container">
     <h2>Ready to get attested?</h2>
-    <p>Most organizations complete their first audit in 6–8 wash cycles.</p>
-    <a class="cta" href="https://github.com/keenanjohnson/sock2-compliance">View the Framework →</a>
+    <p>Most organizations complete their first audit in 6–8 wash cycles. Some never start. Don't be most organizations.</p>
+    <a class="cta" href="#badge">Claim Your Badge →</a>
   </div>
 </section>
 
 <footer>
   <div class="container">
-    <p>© 2026 Sock 2 Compliance. This is a joke. There is no framework. Please do not cite this in your actual audit.</p>
+    <p>© 2026 Sock 2 Compliance. This is a joke. There is no framework. Please do not cite this in your actual SOC 2 audit, vendor questionnaire, or DEF CON talk. <a href="https://github.com/keenanjohnson/sock2-compliance">Source on GitHub</a>.</p>
   </div>
 </footer>
+
+<script>
+  function copyEmbed(btn) {
+    const code = document.getElementById('embed-code').innerText;
+    navigator.clipboard.writeText(code).then(() => {
+      const original = btn.textContent;
+      btn.textContent = 'Copied. You are now compliant.';
+      setTimeout(() => { btn.textContent = original; }, 2400);
+    }).catch(() => {
+      btn.textContent = 'Copy failed. Please attest manually.';
+    });
+  }
+</script>
 
 </body>
 </html>
